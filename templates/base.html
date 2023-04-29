@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/main.css">
+    <title>riley world</title>
+  </head>
+
+  <body>
+    <header>
+      <h1><a href="/">completelygeneric.</a></h1>
+      <nav>
+        <ul>
+        <li id="first-nav-item"><a href="/feed">posts</a></li>
+        <li id="second-nav-item"><a href="/tags">explore</a></li>
+          <li id="third-nav-item"><a href="#">random</a></li>
+          <li id="fourth-nav-item"><a href="#">doobie cat</a></li>
+          <li id="last-nav-item"><a href="/about">about</a></li>
+        </ul>
+      </nav>  
+    </header>
+    <main>
+      <section class="section">
+        {% block content %}{% endblock %}
+      </section>
+    </main>
+  </body>
+
+</html>

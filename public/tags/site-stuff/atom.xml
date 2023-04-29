@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title> - site stuff</title>
+    <link href="https://mywarmblood.neocities.org/tags/site-stuff/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://mywarmblood.neocities.org"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-04-29T00:00:00+00:00</updated>
+    <id>https://mywarmblood.neocities.org/tags/site-stuff/atom.xml</id>
+    <entry xml:lang="en">
+        <title>big news for the category fans</title>
+        <published>2023-04-29T00:00:00+00:00</published>
+        <updated>2023-04-29T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://mywarmblood.neocities.org/feed/2023-04-29/" type="text/html"/>
+        <id>https://mywarmblood.neocities.org/feed/2023-04-29/</id>
+        
+        <content type="html">&lt;p&gt;Ok so I think we tags working using the taxononmy engine. I&#x27;m not totally happy. I think that files should probably be its own taxon. Right now the only way for me to really push a post is to put a markdown file into one fold that holds all the other posts, not the best tbh. These static site generators really are design to be used with github pages in mind. It just feels like I&#x27;m fighting with it a bit. It&#x27;s a lot better than jekyll though. It was a bit tricky implementing the little decoration at the front of post titles in the feed, but very fun. I think next is getting multiple taxons working, and building a proper sitemap. Also maybe we use javascript &lt;em&gt;only&lt;&#x2F;em&gt; for search implementation.&lt;&#x2F;p&gt;
+&lt;p&gt;ps. pagination is like implemented but i don&#x27;t have any ideas for what I want to do UI wise as far as navigation buttons go 🥴&lt;&#x2F;p&gt;
+&lt;p&gt;pps. if u go thru the explore page a taxon&#x27;s terms are not sorted and i really don&#x27;t think there is a way to sort them with pagination lol. I might need to just get the whole pages array and handle pagination myself for tags. For the posts section date sorting works fine.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>test post to test taxonomies</title>
+        <published>2023-04-29T00:00:00+00:00</published>
+        <updated>2023-04-29T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://mywarmblood.neocities.org/feed/taxonomy-test/" type="text/html"/>
+        <id>https://mywarmblood.neocities.org/feed/taxonomy-test/</id>
+        
+        <content type="html">&lt;p&gt;This is a test post tagged with all the tags we have so far.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>TODO:</title>
+        <published>2023-04-28T21:55:00+00:00</published>
+        <updated>2023-04-28T21:55:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://mywarmblood.neocities.org/feed/okyeahcool/" type="text/html"/>
+        <id>https://mywarmblood.neocities.org/feed/okyeahcool/</id>
+        
+        <content type="html">&lt;p&gt;ok yeah so cool. what i really want to do is this: so I want to be able to put like 3 lines behind the heading for a specific taxon. &lt;a href=&quot;http:&#x2F;&#x2F;127.0.0.1:1111&#x2F;tags&#x2F;site-stuff&#x2F;&quot;&gt;(like on this page for example)&lt;&#x2F;a&gt;. I&#x27;m unsure how I&#x27;m going to do this. I&#x27;ve tried using linear gradients but that definetely isnt going to work.&lt;&#x2F;p&gt;
+&lt;p&gt;UPDATE: 04&#x2F;29&#x2F;2023, we&#x27;re going to go with adding tag-color-specific forward slashes before posts! &lt;&#x2F;p&gt;
+&lt;p&gt;UPDATE: WEW WE DID IT&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>i guess I have to write something.</title>
+        <published>2023-04-25T00:00:00+00:00</published>
+        <updated>2023-04-25T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://mywarmblood.neocities.org/feed/okherewego/" type="text/html"/>
+        <id>https://mywarmblood.neocities.org/feed/okherewego/</id>
+        
+        <content type="html">&lt;p&gt;woof, ok so I have to write something as filler so I might as well describe what I&#x27;ve done so far. I&#x27;m making this site using zola, which really does seem like overkill at this point. honestly even using sass feels like overkill, especially when I&#x27;m bad at it. You don&#x27;t want to peep the style-sheets there&#x27;s some really fucked up nesting happening that I can already see being a probem in the future.&lt;&#x2F;p&gt;
+&lt;p&gt;I suppose I should test out paragraphs and like markdown features right. Ok so basically what I want to implement now:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;a cute lil arrow thing before the blog post title in the feeds section, I have some ideas but design is hard and not my passsion.&lt;&#x2F;li&gt;
+&lt;li&gt;taxonomies. this is a big one. maybe even have like, accent stuff that corresponds with the category be generated by Zola. That would be so rad.&lt;&#x2F;li&gt;
+&lt;li&gt;theme the individual posts.&lt;&#x2F;li&gt;
+&lt;li&gt;I literally only made the header so far lol woozy.&lt;&#x2F;li&gt;
+&lt;li&gt;a big word cloud of all the words from my posts that is statically generated no JS&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+</content>
+        
+    </entry>
+</feed>

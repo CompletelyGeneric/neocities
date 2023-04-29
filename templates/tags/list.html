@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<section class="posts-tag-list">
+  <h1 class="title">
+    i herd u liek taxons >
+  </h1>  
+  <ul>    
+    {% for term in terms | sort(attribute="page_count") | reverse %}
+      <li><a href={{term.path}}>{{term.name}} (<span class="tag-accent tag-{{term.name | slugify}}">{{term.page_count}}</span>) <span class="tag-accent tag-{{term.name | slugify}}">/</span></a></li>
+    {% endfor %}  
+  </ul>
+</section>
+{% endblock content %}

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="post">
+  <h1 class="title">
+    {{ page.title }}
+  </h1>
+  <p class="subtitle"><strong>{{ page.date | date(format="%Y-%m-%d") }}</strong></p>
+  <section class="post-body">
+    {{ page.content | safe }}
+  </section>
+</section>
+{% endblock content %}

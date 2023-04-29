@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title> - code</title>
+    <link href="https://mywarmblood.neocities.org/tags/code/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://mywarmblood.neocities.org"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-04-29T00:00:00+00:00</updated>
+    <id>https://mywarmblood.neocities.org/tags/code/atom.xml</id>
+    <entry xml:lang="en">
+        <title>big news for the category fans</title>
+        <published>2023-04-29T00:00:00+00:00</published>
+        <updated>2023-04-29T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://mywarmblood.neocities.org/feed/2023-04-29/" type="text/html"/>
+        <id>https://mywarmblood.neocities.org/feed/2023-04-29/</id>
+        
+        <content type="html">&lt;p&gt;Ok so I think we tags working using the taxononmy engine. I&#x27;m not totally happy. I think that files should probably be its own taxon. Right now the only way for me to really push a post is to put a markdown file into one fold that holds all the other posts, not the best tbh. These static site generators really are design to be used with github pages in mind. It just feels like I&#x27;m fighting with it a bit. It&#x27;s a lot better than jekyll though. It was a bit tricky implementing the little decoration at the front of post titles in the feed, but very fun. I think next is getting multiple taxons working, and building a proper sitemap. Also maybe we use javascript &lt;em&gt;only&lt;&#x2F;em&gt; for search implementation.&lt;&#x2F;p&gt;
+&lt;p&gt;ps. pagination is like implemented but i don&#x27;t have any ideas for what I want to do UI wise as far as navigation buttons go 🥴&lt;&#x2F;p&gt;
+&lt;p&gt;pps. if u go thru the explore page a taxon&#x27;s terms are not sorted and i really don&#x27;t think there is a way to sort them with pagination lol. I might need to just get the whole pages array and handle pagination myself for tags. For the posts section date sorting works fine.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>test post to test taxonomies</title>
+        <published>2023-04-29T00:00:00+00:00</published>
+        <updated>2023-04-29T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://mywarmblood.neocities.org/feed/taxonomy-test/" type="text/html"/>
+        <id>https://mywarmblood.neocities.org/feed/taxonomy-test/</id>
+        
+        <content type="html">&lt;p&gt;This is a test post tagged with all the tags we have so far.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
