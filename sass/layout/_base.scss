@@ -5,6 +5,10 @@ $font-family: Helvetica, sans-serif;
 $font-size: g.$font-size;
 
 :root {
+  width: 100vw;
+}
+
+body {
   color: g.$font-color;
   background-color: g.$bg-color;
   font-family: $font-family;
@@ -13,11 +17,6 @@ $font-size: g.$font-size;
   margin-left: 2.5%;
   margin-right: 2.5%;
 }
-
-body {
-  width: 100%;
-}
-
 main {
   -webkit-font-smoothing: antialiased;
   h1 {
