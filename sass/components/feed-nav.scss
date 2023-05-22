@@ -1,0 +1,13 @@
+@use "../globals" as g;
+
+span.feed-nav {
+  float: right;
+  font-size: 2 * g.$font-size;
+  .feed-nav-prev {
+  }
+  .feed-nav-next {
+  }
+  .feed-nav-arrow {
+    color: #4C566A;
+  }
+}

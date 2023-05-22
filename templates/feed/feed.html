@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="feed">
+  <h1 class="title">
+    {{ section.title }}
+    <span class="feed-nav">
+      <a href="{{paginator.previous}}" class="feed-nav-prev"><span class="feed-nav-arrow">&#10096;</span> prev</a>
+      <span class=""> / </span>
+      <a href="{{paginator.next}}"class="feed-nav-next">next <span class="feed-nav-arrow">&#10097;</span></a>
+    </span>
+  </h1>
+  <span id="feed-nav-bar"></span>
+  <ul>
+    <!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->  
+    {% for page in paginator.pages -%}
+
+
+    {#
+      The goal of this stuff is to generate 3 slashes, with their colors' 
+      representing the tag (the site's general taxon) they belong to. 
+      terms within a taxon canot be weighted, so we kinda just give it the first 3 tags
+      we get from the page.taxonomies["tags"] array. thats fine for now. 
+    -#}
+    {%- set max_slashes = 3 -%}
+    {%- set num_tags = page.taxonomies["tags"] | length -%}
+    <li>
+      <a href="{{ page.permalink | safe }}">
+        <span class="accent-tag-slashes">
+          {%- if num_tags < max_slashes -%}
+            {%- for i in range(end=max_slashes - num_tags) -%}
+              /
+            {%- endfor -%}
+          {%- endif -%}
+          </span>
+          {%- for tag in page.taxonomies["tags"] -%}
+            {%- if loop.index0 < max_slashes -%}
+             <span class="tag-accent tag-{{tag | slugify}}"><b>/</b></span>
+             {%- set_global slash_counter = loop.index-%}
+            {%- endif-%} 
+          {%- endfor -%}
+        </span>
+       <i>{{ page.title }}</i>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endblock content %}
