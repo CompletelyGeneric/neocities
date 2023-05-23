@@ -1,12 +1,21 @@
 @use "../globals" as g;
 
-span.feed-nav {
-  float: right;
+section.feed-nav {
+  display: block;
+  width: 50%;
+  margin: 5% auto 0 auto;
+  text-align: center;
   font-size: 2 * g.$font-size;
+
+  a {
+    color: g.$font-color; 
+    text-decoration: none;
+  }
   .feed-nav-prev {
   }
   .feed-nav-next {
   }
+
   .feed-nav-arrow {
     color: #4C566A;
   }

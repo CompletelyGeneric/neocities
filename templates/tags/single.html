@@ -4,11 +4,6 @@
   <section class="feed">
       <h1 class="title">
         {{term.name}} <span class="tag-accent tag-{{term.name | slugify}}">/</span>
-        <span class="feed-nav">
-          <a href="{{paginator.previous}}" class="feed-nav-prev"><span class="feed-nav-arrow">&#10096;</span> prev</a>
-          <span class="tag-accent tag-{{term.name | slugify}}"> / </span>
-          <a href="{{paginator.next}}"class="feed-nav-next">next <span class="feed-nav-arrow">&#10097;</span></a>
-        </span>
       </h1>
 
 
@@ -68,7 +63,9 @@
       </ul>
 </section>
 <section class="feed-nav">
-  
+    <a href="{{paginator.previous}}" class="feed-nav-prev"><span class="feed-nav-arrow">&#10096;</span> prev</a>
+    <span class="tag-accent tag-{{term.name | slugify}}"> / </span>
+    <a href="{{paginator.next}}"class="feed-nav-next">next <span class="feed-nav-arrow">&#10097;</span></a>
 </section>
 
 {% endblock content %}
