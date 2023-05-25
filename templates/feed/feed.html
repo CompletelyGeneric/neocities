@@ -12,7 +12,7 @@
     {#
       The goal of this stuff is to generate 3 slashes, with their colors' 
       representing the tag (the site's general taxon) they belong to. 
-      terms within a taxon canot be weighted, so we kinda just give it the first 3 tags
+      terms within a taxon cannot be weighted, so we kinda just give it the first 3 tags
       we get from the page.taxonomies["tags"] array. thats fine for now. 
     -#}
     {%- set max_slashes = 3 -%}
@@ -40,8 +40,14 @@
   </ul>
 </section>
 <section class="feed-nav">
+  {% if paginator.previous %}
   <a href="{{paginator.previous}}" class="feed-nav-prev"><span class="feed-nav-arrow">&#10096;</span> prev</a>
+  {% endif %}
+  {% if paginator.next and paginator.previous %}
   <span class=""> / </span>
+  {% endif %}
+  {% if paginator.next %}
   <a href="{{paginator.next}}"class="feed-nav-next">next <span class="feed-nav-arrow">&#10097;</span></a>
+  {% endif %}
 </section>
 {% endblock content %}

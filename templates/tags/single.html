@@ -12,7 +12,7 @@
       <ul>
         {#
           Taxonomies cannot be sorted, so we will have to do so ourselves.
-          This relies on get_taxonomy_term returing the specificied term in a state before it's pages
+          This relies on get_taxonomy_term returning the specified term in a state before it's pages
           are paginated. Why don't we just not use pagination? -> when we use pagination
           this template will be invoked for us, we just need to keep track of our current pager we are on.
           unfortunately this means for every pager we have we have to sort a whole term...... lol.
@@ -63,9 +63,15 @@
       </ul>
 </section>
 <section class="feed-nav">
+  {% if paginator.previous %}
     <a href="{{paginator.previous}}" class="feed-nav-prev"><span class="feed-nav-arrow">&#10096;</span> prev</a>
-    <span class="tag-accent tag-{{term.name | slugify}}"> / </span>
+  {% endif %}
+  {% if paginator.next and paginator.previous %}
+  <span class="tag-accent tag-{{term.name | slugify}}"> / </span>
+  {% endif %}
+  {% if paginator.next %}
     <a href="{{paginator.next}}"class="feed-nav-next">next <span class="feed-nav-arrow">&#10097;</span></a>
+  {% endif %}
 </section>
 
 {% endblock content %}
