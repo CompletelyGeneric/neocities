@@ -18,7 +18,7 @@
     {%- set max_slashes = 3 -%}
     {%- set num_tags = page.taxonomies["tags"] | length -%}
     <li>
-      <a href="{{ page.permalink | safe }}">
+      <a href="{{page.permalink | safe}}">
         <span class="accent-tag-slashes">
           {%- if num_tags < max_slashes -%}
             {%- for i in range(end=max_slashes - num_tags) -%}
