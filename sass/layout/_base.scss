@@ -19,8 +19,6 @@ body {
 }
 main {
   -webkit-font-smoothing: antialiased;
-
-
 }
 
 section.section { 
@@ -54,7 +52,7 @@ section.generic-body {
   color: g.$dark-color-4;
 
   &.tag-site-stuff {
-      color: g.$tag-accent-site-stuff ;
+      color: g.$tag-accent-site-stuff;
   } 
 
   &.tag-slop {
@@ -72,7 +70,12 @@ section.generic-body {
   &.tag-code {
     color: g.$tag-accent-code;
   }
+  
   &.tag-useful-stuff {
-   color: g.$accent-color-light-blue;
+    color: g.$accent-color-light-blue;
+  }
+
+  &.tag-divigations {
+    color: g.$accent-color-green;
   }
 }
