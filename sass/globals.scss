@@ -13,12 +13,9 @@ $accent-color-light-blue: #88c0d0;
 $accent-color-blue: #81a1c1;
 $accent-color-dark-blue: #5e81ac;
 $bg-color: #2E3440;
-
-
 $dark-color-4: #4c566a;
 $dark-color-3: #434c5e;
 $dark-color-2: #3b4252;
-
 $tag-accent-slop: #bf616a;
 $tag-accent-site-stuff: #b48ead;
 $tag-accent-music: #d08770;
@@ -27,4 +24,16 @@ $tag-accent-code: #a3be8c;
 $font-size: 1.25rem;
 
 
+// Please go back and refactor the code to use this please riley u gotta
+// THIS IS THE AUTHORITATIVE SOURCE OF TAG COLORS. OR AT LEAST IT NEEDS TO BE.
+// PRESENTLY SUCH IT IS A MESS.
+$tag-colors: (
+  "site-stuff": $tag-accent-site-stuff,
+  "slop": $tag-accent-slop,
+  "files": $tag-accent-files,
+  "music": $tag-accent-music,
+  "code": $tag-accent-code,
+  "useful-stuff": $accent-color-light-blue,
+  "divagations": $accent-color-green
+);
 
