@@ -22,8 +22,10 @@ span.tag-display {
   } 
 
   a.tag-display-last {
-    padding-left: 18px;
-    padding-right: 6px;
+    padding-left: 16px;
+    padding-right: 0px;
+    position: relative;
+    z-index: 5;
   }
 
   .tag-display-end {
@@ -31,11 +33,13 @@ span.tag-display {
     margin: 0;
     display: inline-block;
     padding-right: 2px;
+    margin-left: -8px;
+    z-index: 6;
     &:before {
       margin-left: 0px;
-      padding: 1px 0px 1px 0px;
+      padding: 1px 0px 1px 8px;
       display: inline-block;
-      content: "\00a0\00a0";
+      content: "\00a0";
       transform: skew(30deg);
     }
   }
