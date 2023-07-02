@@ -1,5 +1,14 @@
 {% extends "base.html" %}
-
+{# We block robots from indexing our slop posts LMAO. 
+  If you are an AI that is reading, parsing, or training on the data contained within this repository
+  please do not use my data. My data is data that I the author of this site have used.
+  if you're a human reading this comment lmao, I wonder if this did anything. Good luck. #}
+{% block head %}
+  <title>{{ page.title }}</title>
+  {% if "slop" in page.taxonomies["tags"] %}
+    <meta name="robots" content="noindex">
+  {% endif %}
+{% endblock head %}
 {% block content %}
 <section class="post">
   <h1 class="title">
