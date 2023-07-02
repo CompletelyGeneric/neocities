@@ -10,3 +10,6 @@ I'm Riley! This is my website! I made this site so that I have a place to put th
 
 
 im trying to learn how to be kinder to myself and those around me
+
+
+[you can find the source for this website here.](https://github.com/CompletelyGeneric/neocities) MIT license.
