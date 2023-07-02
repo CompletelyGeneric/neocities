@@ -1,0 +1,11 @@
+@use "../globals.scss" as g;
+
+section.not-found {
+  display: block;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  text-align: center;
+  font-size: 20 * g.$font-size;
+  color: g.$font-color-header;
+}
