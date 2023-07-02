@@ -1,10 +1,26 @@
 @use "../globals" as g;
 
+section.post {
+  .title {
+    // color: g.$font-color-header;
+    margin-bottom: 2.5%;
+  }
+  .subtitle {
+
+  }
+
+  .spacer {
+    
+  }
+}
+
 section.post-body {
   margin-left: 2.5%;
   margin-right: 2.5%;
   margin-top: 3%;
   text-indent: 5%;
+  color: g.$font-color-header;
+  
   li {
     text-indent: 0%;
   }

@@ -1,0 +1,57 @@
+@use "../globals" as g;
+
+span.tag-display {
+  padding: 0;
+  float: right;
+  list-style-type: none;
+  display: inline;
+  font-size: 0px;
+
+  a {
+    margin: 0px;
+    padding: 1px 16px 1px 16px;
+    display: inline-block;
+    text-decoration: none;
+    color: g.$font-color;
+    font-size: g.$font-size;
+    transform: skew(30deg);
+    span.rotate {
+      display: inline-block;
+      transform: skew(-30deg);
+    }
+  } 
+
+  a.tag-display-last {
+    padding-left: 16px;
+    padding-right: 8px;
+  }
+
+  .tag-display-end {
+    font-size: g.$font-size;
+    margin: 0;
+    display: inline-block;
+    padding-right: 2px;
+    &:before {
+      margin-left: 0px;
+      padding: 1px 0px 1px 0px;
+      display: inline-block;
+      content: "\00a0\00a0";
+      transform: skew(30deg);
+    }
+  }
+}
+
+
+
+//map tag background colors
+@each $tag, $color in g.$tag-colors {
+  .tag-display-accent-#{$tag} {
+    background-color: $color;
+    &:before {
+      background-color: $color;
+    }
+  }
+}
+
+
+  
