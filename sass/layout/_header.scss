@@ -31,7 +31,7 @@ header {
 
   li {
     font-size: 1.35 * $font-size;
-    margin: 0 0.30rem 0 0;
+    margin: 0 0.3rem 0.3rem 0;
     padding: 6px 16px 6px 16px;
     text-align: center;
     display: inline-block;
@@ -54,7 +54,7 @@ header {
 
 // little bar that separates header :3
 #header-sep {
-  margin: 0 auto 0 auto;
+  margin: 0 auto 0.3rem auto;
   display: block;
   color: #4C566A;
   border-bottom-style: solid;
