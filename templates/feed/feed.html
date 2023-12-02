@@ -41,13 +41,13 @@
 </section>
 <section class="feed-nav">
   {% if paginator.previous %}
-  <a href="{{paginator.previous}}" class="feed-nav-prev"><span class="feed-nav-arrow">&#10096;</span> prev</a>
+  <a href="{{paginator.previous}}" class="feed-nav-prev"><span class="feed-nav-arrow">&#10096;</span><span class="nav-text"> prev</span></a>
   {% endif %}
   {% if paginator.next and paginator.previous %}
   <span class=""> / </span>
   {% endif %}
   {% if paginator.next %}
-  <a href="{{paginator.next}}"class="feed-nav-next">next <span class="feed-nav-arrow">&#10097;</span></a>
+  <a href="{{paginator.next}}"class="feed-nav-next"><span class="nav-text">next </span><span class="feed-nav-arrow">&#10097;</span></a>
   {% endif %}
 </section>
 {% endblock content %}

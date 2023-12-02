@@ -13,6 +13,11 @@ section.feed-nav {
     color: g.$font-color; 
     text-decoration: none;
   }
+  .nav-text {
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.75 * g.$font-size;
+  }
   .feed-nav-prev {
   }
   .feed-nav-next {
@@ -20,5 +25,6 @@ section.feed-nav {
 
   .feed-nav-arrow {
     color: #4C566A;
+    vertical-align: middle;
   }
 }
