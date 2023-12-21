@@ -8,6 +8,9 @@ compile_sass = true
 build_search_index = false
 
 minify_html = true
+feed_filename = "rss.xml"
+author = "riley@3cats.moe"
+generate_feed = true
 
 taxonomies = [
   { name = "tags", paginate_by = 5, feed = true },

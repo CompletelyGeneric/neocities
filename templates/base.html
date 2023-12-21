@@ -8,6 +8,9 @@
     <meta name="description" content="you can be who you want to be right now">
     <meta name="author" content="Riley M">
     {% endblock %}
+    {% block rss %}
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
+    {% endblock %}
     <link rel="stylesheet" href="/main.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=1">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=1">
@@ -19,7 +22,6 @@
     <meta name="theme-color" content="#ffffff">
     <meta name="keywords" content="music, posting">
   </head>
-
   <body>
     <header>
       <h1><a href="/feed">riley world.</a></h1>
@@ -27,9 +29,9 @@
         <ul>
         <li id="first-nav-item"><a href="/feed">posts</a></li>
         <li id="second-nav-item"><a href="/tags">explore</a></li>
-        <li id="third-nav-item"><a href="aa">sitemap</a></li>
-        <li id="fourth-nav-item"><a href="https://thisuserma.bandcamp.com">music</a></li>
-        <li id="last-nav-item"><a href="/about">about</a></li>
+        <li id="third-nav-item"><a href="https://thisuserma.bandcamp.com">music</a></li>
+        <li id="fourth-nav-item"><a href="/about">about</a></li>
+        <li id="last-nav-item"><a href="/rss.xml">&nbsp;rss&nbsp;</a></li>
         </ul>
       </nav>
       <div id="header-sep"></div>  
