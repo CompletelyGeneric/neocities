@@ -38,8 +38,10 @@ section.post-body {
 
   // these are recommended defaults from the zola documentation  https://www.getzola.org/documentation/content/syntax-highlighting/ 
   pre {
+    font-size: 1rem;
     padding: 1rem;
     overflow: auto;
+    scrollbar-color: g.$dark-color-2 g.$dark-color-4;
   }
   // The line numbers already provide some kind of left/right padding
   pre[data-linenos] {
