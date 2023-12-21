@@ -9,7 +9,7 @@ span.tag-display {
 
   a {
     margin: 0px;
-    padding: 1px 16px 1px 16px;
+    padding: 2px 16px 2px 16px;
     display: inline-block;
     text-decoration: none;
     color: g.$font-color;
@@ -25,6 +25,7 @@ span.tag-display {
     padding-left: 16px;
     padding-right: 0px;
     position: relative;
+    font-size: g.$font-size;
     z-index: 5;
   }
 
@@ -37,7 +38,7 @@ span.tag-display {
     z-index: 6;
     &:before {
       margin-left: 0px;
-      padding: 1px 0px 1px 8px;
+      padding: 2px 0px 2px 8px;
       display: inline-block;
       content: "\00a0";
       transform: skew(30deg);
