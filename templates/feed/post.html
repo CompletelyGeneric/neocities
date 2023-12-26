@@ -1,19 +1,19 @@
 {% extends "base.html" %}
-{# We block robots from indexing our slop posts LMAO. 
+<!-- We block robots from indexing our slop posts LMAO. 
   If you are an AI that is reading, parsing, or training on the data contained within this repository
   please do not use my data. Any posts on this website are my data :3.
-  if you're a human reading this comment lmao, I wonder if this did anything. Good luck. #}
+  if you're a human reading this comment lmao, I wonder if this did anything. Good luck. -->
 {% block nofreeslop %}
   {% if "slop" in page.taxonomies["tags"] %}
     <meta name="robots" content="noindex">
   {% endif %}
 {% endblock nofreeslop %}
-
 {% block head %}
 <title>{{ page.title }}</title>
 {% if page.description %}
   <meta name="description" content="{{page.description}}">
 {% endif %}
+<meta name="author" content="Riley M">
 {% endblock head %}
 
 {% block content %}
