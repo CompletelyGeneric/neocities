@@ -1,0 +1,28 @@
+User-agent: *
+Disallow: 
+Disallow: /.well-known/
+Disallow: /tags/slop
+Sitemap: https://riler.dog/sitemap.xml
+
+User-agent: CCBot
+Disallow: /
+
+# For new training only
+User-agent: GPTBot
+Disallow: /
+
+# Not for training, only for user requests 
+User-agent: ChatGPT-User
+Disallow: /
+
+# Marker for disabling Bard and Vertex AI
+User-agent: Google-Extended
+Disallow: /
+
+# Speech synthesis only?
+User-agent: FacebookBot
+Disallow: /
+
+# Multi-purpose, commercial uses; including LLMs
+User-agent: Omgilibot
+Disallow: /
