@@ -8,42 +8,19 @@ span.tag-display {
   font-size: 0px;
 
   a {
-    margin: 0px 0px 0px 0px;
+    margin: 0px 2px 0px 2px;
     padding: 4px 16px 4px 16px;
     display: inline-block;
     text-decoration: none;
     color: g.$font-color;
     font-size: g.$font-size;
     transform: skew(30deg);
+    border-radius: 1%;
     span.rotate {
       display: inline-block;
       transform: skew(-30deg);
     }
   } 
-
-  a.tag-display-last {
-    padding-left: 16px;
-    padding-right: 0px;
-    position: relative;
-    font-size: g.$font-size;
-    z-index: 5;
-  }
-
-  .tag-display-end {
-    font-size: g.$font-size;
-    margin: 0;
-    display: inline-block;
-    padding-right: 4px;
-    margin-left: -8px;
-    z-index: 6;
-    &:before {
-      margin-left: 0px;
-      padding: 4px 0px 4px 8px;
-      display: inline-block;
-      content: "\00a0";
-      transform: skew(30deg);
-    }
-  }
 }
 
 
