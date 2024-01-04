@@ -6,10 +6,11 @@ span.tag-display {
   list-style-type: none;
   display: inline;
   font-size: 0px;
+  text-align: center;
 
   a {
     margin: 0px 2px 0px 2px;
-    padding: 4px 16px 4px 16px;
+    padding: 4px 14px 4px 14px;
     display: inline-block;
     text-decoration: none;
     color: g.$font-color;
