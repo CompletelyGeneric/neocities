@@ -25,7 +25,7 @@
     <strong>{{ page.date | date(format="%Y-%m-%d") }}</strong>
     <span class="tag-display">
     {% for tag in page.taxonomies["tags"] %}
-      <a class="tag-display-accent-{{tag | slugify}}" href="{{config.base_url}}/tags/{{tag | slugify}}"><span class="rotate">{{ tag | slugify }}</span></a>
+      <a class="tag-display-accent-{{tag | slugify}}" href="{{config.base_url}}/tags/{{tag | slugify}}"><span class="rotate">{{ tag }}</span></a>
     {% endfor %}
     </span>
   </section>
