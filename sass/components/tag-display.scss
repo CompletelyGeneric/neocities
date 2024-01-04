@@ -8,8 +8,8 @@ span.tag-display {
   font-size: 0px;
 
   a {
-    margin: 0px;
-    padding: 2px 16px 2px 16px;
+    margin: 0px 0px 0px 0px;
+    padding: 4px 16px 4px 16px;
     display: inline-block;
     text-decoration: none;
     color: g.$font-color;
@@ -33,12 +33,12 @@ span.tag-display {
     font-size: g.$font-size;
     margin: 0;
     display: inline-block;
-    padding-right: 2px;
+    padding-right: 4px;
     margin-left: -8px;
     z-index: 6;
     &:before {
       margin-left: 0px;
-      padding: 2px 0px 2px 8px;
+      padding: 4px 0px 4px 8px;
       display: inline-block;
       content: "\00a0";
       transform: skew(30deg);
