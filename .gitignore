@@ -3,5 +3,5 @@
 public/
 content/feed/
 !content/feed/_index.md
-static/music/
+static/files/music/
 static/.well-known
