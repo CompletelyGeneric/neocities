@@ -6,7 +6,8 @@ $font-size: g.$font-size;
 // * {border:1px solid red}
 
 :root {
-  max-width:100%;
+  scrollbar-gutter: stable;
+  max-width: 100%;
   width: 100vw;
 }
 
