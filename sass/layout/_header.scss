@@ -5,10 +5,9 @@ $font-size: g.$font-size;
 
 header {
   margin: auto auto 3% auto;
-  //used for "completely generic"
   h1 {
     color: g.$font-color-header;
-    font-size: 3.0 * $font-size;
+    font-size: 3.0 * g.$font-size;
     width: auto;
     padding: 0;
     margin-bottom: 1.35%;
@@ -30,7 +29,7 @@ header {
   }
 
   li {
-    font-size: 1.35 * $font-size;
+    font-size: 1.35 * g.$font-size;
     margin: 0 0.3rem 0.3rem 0;
     padding: 6px 16px 6px 16px;
     text-align: center;

@@ -1,6 +1,5 @@
 @use "../globals" as g;
 $font-family: Helvetica, sans-serif;
-$font-size: g.$font-size;
 
 // sometimes this is just easier what can i say
 // * {border:1px solid red}
@@ -25,13 +24,13 @@ main {
 }
 
 section.section { 
-  font-size: $font-size;
+  font-size: g.$font-size;
   margin-top: 0;
   margin-left: 5%;
   margin-right: 5%;
 
   h1 {
-    font-size: 2 * $font-size;
+    font-size: 2 * g.$font-size;
     margin: 0;
   }
 }

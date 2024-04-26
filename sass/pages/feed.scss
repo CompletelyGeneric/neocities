@@ -11,7 +11,7 @@ section.feed {
   li { 
     display: block;
     margin: 4.5% 3% 4.5% 3%;
-    font-size: 1.5 * $font-size;
+    font-size: 1.5 * g.$font-size;
   }
   a {
     color: g.$font-color-alt;
