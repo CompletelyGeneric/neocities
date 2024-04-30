@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: 
 Disallow: /.well-known/
 Disallow: /tags/slop
 Sitemap: https://riler.dog/sitemap.xml
