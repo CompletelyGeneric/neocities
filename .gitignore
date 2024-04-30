@@ -3,4 +3,5 @@
 public/
 static/files/music/
 static/.well-known
-content/*.md
+content/posts/*.md
+!content/posts/_index.md
