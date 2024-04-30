@@ -1,9 +1,6 @@
 .vscode/settings.json
 .DS_Store
 public/
-content/feed/
-!content/feed/_index.md
 static/files/music/
 static/.well-known
-!feed/_index.md
 content/*.md
