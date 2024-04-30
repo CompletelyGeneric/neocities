@@ -10,7 +10,9 @@
   {% endif %}
 {% endblock nofreeslop %}
 {% block head %}
-<title>{{ page.title }}</title>
+{% if page.title %} 
+  <title>{{ page.title }}</title>
+{%endif%}
 {% if page.description %}
   <meta name="description" content="{{page.description}}">
 {% endif %}
