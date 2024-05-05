@@ -25,3 +25,8 @@ Disallow: /
 # Multi-purpose, commercial uses; including LLMs
 User-agent: Omgilibot
 Disallow: /
+
+# Claude
+User-agent: ClaudeBot
+Disallow: /
+
