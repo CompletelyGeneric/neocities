@@ -27,7 +27,9 @@ section.post-body {
     font-style: italic;
     text-decoration: none;
   }
-
+  video {
+    width : 100%;
+  }
 
   // these are recommended defaults from the zola documentation  https://www.getzola.org/documentation/content/syntax-highlighting/ 
   pre {
