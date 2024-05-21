@@ -6,4 +6,4 @@ static/files/video/
 static/.well-known
 content/posts/*.md
 !content/posts/_index.md
-!content/posts/2024-25-21-example-post.md
+!content/posts/2024-05-21-example-post.md
