@@ -1,0 +1,8 @@
+@use "../globals" as g;
+section.music {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 3%;
+  text-indent: 0%;
+  color: g.$font-color-header;
+}
