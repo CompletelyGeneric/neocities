@@ -37,13 +37,12 @@ section.post-body {
     audio {
       width: 100%;
       margin-bottom: 5%
-  }
     }
     .dl-link {
       display: none;
-    }
-}
-    
+    } 
+  }
+}    
   // these are recommended defaults from the zola documentation  https://www.getzola.org/documentation/content/syntax-highlighting/ 
   pre {
     font-size: 1rem;
