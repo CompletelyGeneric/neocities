@@ -30,7 +30,9 @@ section.post-body {
   video {
     width : 100%;
   }
-
+  audio {
+    vertical-align: middle;
+  }
   // these are recommended defaults from the zola documentation  https://www.getzola.org/documentation/content/syntax-highlighting/ 
   pre {
     font-size: 1rem;
